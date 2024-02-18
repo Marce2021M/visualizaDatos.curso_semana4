@@ -1,0 +1,21 @@
+html,
+body {
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}
+
+#controlDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 2;
+}

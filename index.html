@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Curvas de Bézier + Interacción web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controlDiv">
+        Bézier: <select id="selector">
+            <option value="2">Lineal</option>
+            <option value="3">Cuadrática</option>
+            <option value="4" selected>Cúbica</option>
+        </select>
+        <br/>
+        Mostrar construcción
+        <input type="checkbox" id="showControl">
+        <br />
+        t = <span id="t">0.00</span>
+        <input type="range" id="param" min="0" max="1" step="0.01" value="0">
+    </div>
+    <canvas id="myCanvas"></canvas>
+</body>
+<script src="vector2d.js"></script>
+<script src="main.js"></script>
+</html>
